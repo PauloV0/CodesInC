@@ -1,3 +1,4 @@
+//Implementar as bibliotecas necessárias;
 #include <stdio.h>
 #include <math.h>
 
@@ -24,8 +25,9 @@ int Kara(int x,y){
     
 //Agora, calcula-se a quantidade de dígitos de x e de y, por exemplo: x = 4001 e y = 8002 têm 4 dígitos cada ;
     int n = fmax(Digits(x), Digits(y));
-//Calcula-se m, que é a metade da quantidade de dígitos
+//Calcula-se m, que é a metade da quantidade de dígitos. Isso é utilizado para saber onde separar o número em dígitos;
     int m = n/2;
     
 }
-// O próximo passo é isolar os dígitos um por um. Como exemplo, serão usados quatro dígitos;
+// O próximo passo é isolar os dígitos um por um. Como exemplo, serão usados quatro dígitos (To Be Done);
+    int a;
