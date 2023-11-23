@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stlib.h>
 #include <math.h>
 
+// Função para contar o número de dígitos em um número;
 int Digits (int n) {
     int count = 0;
     while (n>0){
@@ -13,4 +13,19 @@ int Digits (int n) {
     return count;
 }
 
-int main (int n)
+// Função principal, o Algorítimo de Karatsuba é iniciado;
+int Kara(int x,y){
+// Caso base: se os dois números são de um dígito,a multiplicação é direta;
+    if (x < 10 || y <10){
+        
+        return x*y;
+        
+    }
+    
+//Agora, calcula-se a quantidade de dígitos de x e de y, por exemplo: x = 4001 e y = 8002 têm 4 dígitos cada ;
+    int n = fmax(Digits(x), Digits(y));
+//Calcula-se m, que é a metade da quantidade de dígitos
+    int m = n/2;
+    
+}
+// O próximo passo é isolar os dígitos um por um. Como exemplo, serão usados quatro dígitos;
